@@ -4,6 +4,9 @@ import com.lightbend.lagom.scaladsl.server.LocalServiceLocator
 import com.lightbend.lagom.scaladsl.testkit.ServiceTest
 import org.scalatest.{AsyncWordSpec, BeforeAndAfterAll, Matchers}
 import com.example.helloworld.api._
+import com.lightbend.lagom.scaladsl.cluster.ClusterComponents
+import com.lightbend.lagom.scaladsl.playjson.EmptyJsonSerializerRegistry
+import com.lightbend.lagom.scaladsl.playjson.JsonSerializerRegistry
 
 class HelloWorldServiceSpec extends AsyncWordSpec with Matchers with BeforeAndAfterAll {
 

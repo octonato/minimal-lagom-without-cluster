@@ -12,7 +12,10 @@
 
     <logger name="akka" level="WARN" />
 
-    <root level="INFO">
+    <logger name="akka.cluster" level="DEBUG"/>
+    <logger name="akka.remote" level="DEBUG"/>
+
+    <root level="DEBUG">
         <appender-ref ref="STDOUT" />
     </root>
 
